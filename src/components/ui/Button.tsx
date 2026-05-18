@@ -2,7 +2,7 @@ import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  variant?: 'primary' | 'secondary' | 'outline';
+  variant?: 'primary' | 'secondary' | 'outline' | 'glass';
   size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
   loading?: boolean;
@@ -22,10 +22,12 @@ export default function Button({
     'inline-flex items-center justify-center font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-400 disabled:opacity-50 disabled:cursor-not-allowed';
 
   const variants = {
-    primary: 'bg-primary-400 hover:bg-primary-500 text-white shadow-soft hover:shadow-soft-lg',
-    secondary: 'bg-white hover:bg-cream-100 text-gray-800 border border-gray-200',
+    primary: 'bg-olive-700 hover:bg-olive-800 text-white shadow-lg shadow-olive-700/25 hover:shadow-xl hover:shadow-olive-700/30',
+    secondary: 'bg-white/80 backdrop-blur-sm hover:bg-white text-olive-800 border border-olive-200/50 shadow-sm hover:shadow-md',
     outline:
-      'bg-transparent hover:bg-primary-400 text-primary-400 hover:text-white border-2 border-primary-400',
+      'bg-white/60 backdrop-blur-md hover:bg-white/90 text-olive-700 hover:text-olive-800 border border-olive-300/40 hover:border-olive-400/60 shadow-sm hover:shadow-md',
+    glass:
+      'bg-white/70 backdrop-blur-xl text-olive-700 border border-white/50 shadow-lg shadow-black/5 hover:bg-white/90 hover:shadow-xl hover:border-olive-200/60',
   };
 
   const sizes = {

@@ -5,10 +5,10 @@ import Testimonials from '../components/home/Testimonials';
 import FlowingMenu from '../components/ui/FlowingMenu';
 
 const menuItems = [
-  { link: '/catalogo/ramos', text: 'Ramos', image: '/images/products/ramo-1.png' },
-  { link: '/catalogo/plantas-interior', text: 'Plantas', image: '/images/products/planta-1.png' },
+  { link: '/catalogo/ramos', text: 'Ramos', image: '/images/products/ramo-5.png' },
+  { link: '/catalogo/plantas-interior', text: 'Plantas', image: '/images/products/planta-2.png' },
   { link: '/catalogo/arreglos', text: 'Arreglos', image: '/images/products/centro-1.png' },
-  { link: '/catalogo/ocasiones-especiales', text: 'Eventos', image: '/images/products/ramo-3.png' }
+  { link: '/catalogo/ocasiones-especiales', text: 'Eventos', image: '/images/products/ramo-7.png' }
 ];
 
 export default function Home() {

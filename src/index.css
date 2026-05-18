@@ -31,15 +31,19 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-xl transition-all duration-200 shadow-soft hover:shadow-soft-lg;
+    @apply bg-olive-700 hover:bg-olive-800 text-white font-medium py-3 px-6 rounded-xl transition-all duration-200 shadow-lg shadow-olive-700/25 hover:shadow-xl hover:shadow-olive-700/30;
   }
 
   .btn-secondary {
-    @apply bg-white hover:bg-cream-100 text-gray-800 font-medium py-3 px-6 rounded-xl border border-gray-200 transition-all duration-200;
+    @apply bg-white/80 backdrop-blur-sm hover:bg-white text-olive-800 font-medium py-3 px-6 rounded-xl border border-olive-200/50 shadow-sm hover:shadow-md transition-all duration-200;
   }
 
   .btn-outline {
-    @apply bg-transparent hover:bg-primary-600 text-primary-600 hover:text-white font-medium py-3 px-6 rounded-xl border-2 border-primary-600 transition-all duration-200;
+    @apply bg-white/60 backdrop-blur-md hover:bg-white/90 text-olive-700 hover:text-olive-800 font-medium py-3 px-6 rounded-xl border border-olive-300/40 hover:border-olive-400/60 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+
+  .btn-glass {
+    @apply bg-white/70 backdrop-blur-xl text-olive-700 font-medium py-3 px-6 rounded-xl border border-white/50 shadow-lg shadow-black/5 hover:bg-white/90 hover:shadow-xl hover:border-olive-200/60 transition-all duration-200;
   }
 
   .card {

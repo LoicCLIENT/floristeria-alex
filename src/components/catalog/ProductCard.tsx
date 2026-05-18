@@ -43,23 +43,23 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
 
           {/* Quick Actions */}
-          <div className="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
             <button
-              className="p-2 bg-white rounded-full shadow-soft hover:bg-cream-100 transition-colors"
+              className="p-2.5 bg-white/80 backdrop-blur-md rounded-full shadow-lg shadow-black/10 hover:bg-white/95 hover:shadow-xl transition-all duration-200 border border-white/60"
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
               }}
             >
-              <Heart className="w-5 h-5 text-gray-600" />
+              <Heart className="w-4 h-4 text-olive-600" />
             </button>
           </div>
 
           {/* Add to Cart Button */}
-          <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
             <button
               onClick={handleAddToCart}
-              className="w-full flex items-center justify-center gap-2 bg-primary-400 hover:bg-primary-500 text-white py-3 rounded-xl font-medium transition-colors"
+              className="w-full flex items-center justify-center gap-2 bg-white/80 backdrop-blur-md hover:bg-white/95 text-olive-700 hover:text-olive-800 py-3 rounded-xl font-medium transition-all duration-200 border border-white/60 shadow-lg shadow-black/10 hover:shadow-xl"
             >
               <ShoppingBag className="w-5 h-5" />
               Añadir al carrito

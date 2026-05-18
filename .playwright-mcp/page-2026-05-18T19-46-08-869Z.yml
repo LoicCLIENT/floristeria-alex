@@ -1,0 +1,62 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - heading "Logo Rosa Griega Floristería Rosa Griega" [level=1] [ref=e7]:
+          - img "Logo Rosa Griega"
+          - text: Floristería Rosa Griega
+        - button "🏠" [ref=e8] [cursor=pointer]
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - heading "Detalles para toda ocasión" [level=2] [ref=e12]
+          - paragraph [ref=e13]: Descubre la belleza natural en cada flor. Ofrecemos arreglos únicos y personalizados para cada ocasión especial.
+          - generic [ref=e14]:
+            - button "Ver Productos" [ref=e15]
+            - button "Contactar" [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: 🌹
+            - heading "Arreglos Personalizados" [level=3] [ref=e20]
+            - paragraph [ref=e21]: Creamos arreglos únicos según tus preferencias y la ocasión.
+          - generic [ref=e22]:
+            - generic [ref=e23]: 🚚
+            - heading "Entrega a Domicilio" [level=3] [ref=e24]
+            - paragraph [ref=e25]: Llevamos la belleza de las flores directamente a tu puerta.
+          - generic [ref=e26]:
+            - generic [ref=e27]: 💝
+            - heading "Ocasiones Especiales" [level=3] [ref=e28]
+            - paragraph [ref=e29]: Perfecto para cumpleaños, aniversarios y celebraciones.
+    - contentinfo [ref=e30]:
+      - paragraph [ref=e32]: © 2025 Floristería Rosa Griega. Todos los derechos reservados.
+  - generic:
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img
+    - generic:
+      - img

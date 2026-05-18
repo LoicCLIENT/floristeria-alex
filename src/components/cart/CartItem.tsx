@@ -54,7 +54,7 @@ export default function CartItem({ item }: CartItemProps) {
           </div>
           <button
             onClick={handleRemove}
-            className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors flex-shrink-0"
+            className="p-2 text-olive-400 hover:text-red-500 hover:bg-red-50/80 rounded-xl transition-all duration-200 flex-shrink-0"
           >
             <Trash2 className="w-5 h-5" />
           </button>
@@ -62,19 +62,19 @@ export default function CartItem({ item }: CartItemProps) {
 
         <div className="flex items-center justify-between mt-4">
           {/* Quantity Controls */}
-          <div className="flex items-center border border-gray-200 rounded-lg">
+          <div className="flex items-center bg-olive-50/50 backdrop-blur-sm border border-olive-200/40 rounded-xl overflow-hidden">
             <button
               onClick={handleDecrement}
               disabled={quantity <= 1}
-              className="p-2 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="p-2 hover:bg-olive-100/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 text-olive-600"
             >
               <Minus className="w-4 h-4" />
             </button>
-            <span className="w-10 text-center text-sm font-medium">{quantity}</span>
+            <span className="w-10 text-center text-sm font-medium text-olive-800">{quantity}</span>
             <button
               onClick={handleIncrement}
               disabled={quantity >= product.stock}
-              className="p-2 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="p-2 hover:bg-olive-100/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 text-olive-600"
             >
               <Plus className="w-4 h-4" />
             </button>

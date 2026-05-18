@@ -69,26 +69,26 @@ export default function ProductInfo({ product }: ProductInfoProps) {
 
       {/* Quantity Selector */}
       <div className="space-y-3">
-        <label className="text-sm font-medium text-gray-700">Cantidad</label>
+        <label className="text-sm font-medium text-olive-700">Cantidad</label>
         <div className="flex items-center gap-3">
-          <div className="flex items-center border border-gray-200 rounded-xl">
+          <div className="flex items-center bg-white/60 backdrop-blur-sm border border-olive-200/40 rounded-xl overflow-hidden">
             <button
               onClick={decrementQuantity}
               disabled={quantity <= 1}
-              className="p-3 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="p-3 hover:bg-olive-50/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 text-olive-600"
             >
               <Minus className="w-4 h-4" />
             </button>
-            <span className="w-12 text-center font-medium">{quantity}</span>
+            <span className="w-12 text-center font-medium text-olive-800">{quantity}</span>
             <button
               onClick={incrementQuantity}
               disabled={quantity >= product.stock}
-              className="p-3 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="p-3 hover:bg-olive-50/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 text-olive-600"
             >
               <Plus className="w-4 h-4" />
             </button>
           </div>
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-olive-500">
             {product.stock} disponibles
           </span>
         </div>
@@ -100,8 +100,8 @@ export default function ProductInfo({ product }: ProductInfoProps) {
           <ShoppingBag className="w-5 h-5 mr-2" />
           Añadir al carrito
         </Button>
-        <button className="p-4 border border-gray-200 rounded-xl hover:bg-cream-100 transition-colors">
-          <Heart className="w-6 h-6 text-gray-600" />
+        <button className="p-4 bg-white/60 backdrop-blur-md border border-olive-200/40 rounded-xl hover:bg-white/90 hover:border-olive-300/60 transition-all duration-200 shadow-sm hover:shadow-md">
+          <Heart className="w-6 h-6 text-olive-600" />
         </button>
       </div>
 
